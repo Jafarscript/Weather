@@ -1,5 +1,5 @@
 const getWeather = async () => {
-    const getlocation = await fetch('https://api.weatherapi.com/v1/current.json?key=7ecae9c0df9f48b6b9d61023210108&q=lagos');
+    const getlocation = await fetch('https://api.weatherapi.com/v1/current.json?key=83afcc67b06f4b40b5a151049210108&q=lagos');
     const location = await getlocation.json();
     // console.log(location);
     document.querySelector('.name').innerHTML = location.location.name + ', ' + location.location.country;

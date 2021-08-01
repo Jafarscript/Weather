@@ -51,7 +51,7 @@ body {
     height: 64px;
     margin-right: 10px;
 }
-@media (max-width:475px) {
+@media (max-width:775px) {
     h1{
         font-size: 20px;
     }

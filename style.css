@@ -2,12 +2,12 @@ body {
   margin: 0;
   font-size: 1.1em;
   font-family: "Poppins", sans-serif;
-  color: #fff;
+  color: rgb(230, 52, 52);
   height: 100vh;
-  background: #00b4ff;
   background-image: url('https://res.cloudinary.com/dvo8xhx6r/image/upload/v1627800560/anastasia-kozheko-cloudy_rphh9l.gif');
   background-size: cover;
-  animation: change 5s ease-in;
+  background-repeat: no-repeat;
+  overflow: hidden;
 }
 @keyframes change {
     from{
@@ -26,12 +26,13 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  text-align: center;
+  /* text-align: center; */
 }
 
 .icon{
     display: flex;
     align-items: center;
+    animation: change 1s ease-in infinite;
 }
 .content{
     width: 100%;
@@ -49,4 +50,13 @@ body {
     width: 64px;
     height: 64px;
     margin-right: 10px;
+}
+@media (max-width:475px) {
+    h1{
+        font-size: 20px;
+    }
+    .img{
+        width: 30px;
+        height: 30px;
+    }
 }

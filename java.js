@@ -2,7 +2,7 @@
 // http://api.weatherapi.com/v1/search.json?key=<YOUR_API_KEY>&q=lond
 
 const getWeather = async () => {
-    const getlocation = await fetch('https://api.openweathermap.org/data/2.5/weather?q=lagos&appid=2341a2abddc990b61f22c2b315450889');
+    const getlocation = await fetch('https://api.openweathermap.org/data/2.5/weather?q=lagos&appid=94c0d175d2286c57ac2e6347fa9501b1');
     const location = await getlocation.json();
     console.log('location',location);
     document.querySelector('.name').innerHTML = location.name + ', ' + location.sys.country;
